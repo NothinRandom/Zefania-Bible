@@ -135,7 +135,7 @@ class BibleReadingPlanOverview
 		$this->str_primary_reading = $this->params->get('primaryReading', 'ttb');
 		$this->str_reading_plan = JRequest::getCmd('a', $this->str_primary_reading);
 		$this->flg_show_credit = $this->params->get('show_credit','0');
-		$this->flg_show_credit = 1;
+		//$this->flg_show_credit = 1;
 		$this->flg_show_page_top = $this->params->get('show_pagination_top', '1');
 		$this->flg_show_page_bot = $this->params->get('show_pagination_bot', '1');	
 		$this->flg_email_button 	= $this->params->get('flg_email_button', '1');	
