@@ -87,7 +87,7 @@ class BibleReadingPlan
 		$this->str_commentary = JRequest::getCmd('d',$str_primary_commentary);
 								
 		$this->flg_show_credit 			= $this->params->get('show_credit','0');
-		$this->flg_show_credit = 1;
+		//$this->flg_show_credit = 1;
 		$this->flg_show_pagination_type = $this->params->get('show_pagination_type','0');
 		$this->flg_show_page_top 		= $this->params->get('show_pagination_top', '1');
 		$this->flg_show_page_bot 		= $this->params->get('show_pagination_bot', '1');
