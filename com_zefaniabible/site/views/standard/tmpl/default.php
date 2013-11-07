@@ -62,8 +62,8 @@ class BibleStandard {
 		$int_commentary_width = $this->params->get('commentaryWidth','800');
 		$int_commentary_height = $this->params->get('commentaryHeight','500');
 		
-		//$this->flg_show_credit 		= $this->params->get('show_credit','0');
-		$this->flg_show_credit = 1;
+		$this->flg_show_credit 		= $this->params->get('show_credit','0');
+		//$this->flg_show_credit = 1;
 		$this->flg_show_pagination_type = $this->params->get('show_pagination_type','0');
 		$this->flg_show_audio_player = $this->params->get('show_audioPlayer','0');
 		$this->int_player_popup_height = $this->params->get('player_popup_height','300');
