@@ -61,7 +61,7 @@ class ZefVerseOfTheDay
 				
 		$this->str_start_date = new DateTime($params->get('start_date'));	
 		// time zone offset.
-		$config =& JFactory::getConfig();
+		$config = JFactory::getConfig();
 		date_default_timezone_set($config->get('offset'));	
 
 		$this->str_today = new DateTime(date('Y-m-d'));
@@ -80,7 +80,7 @@ class ZefVerseOfTheDay
 		{
 			$this->int_verse_remainder = $this->int_max_verses;
 		}
-		$this->params = &JComponentHelper::getParams( 'com_zefaniabible' );
+		$this->params = JComponentHelper::getParams( 'com_zefaniabible' );
 		$this->biblePath = $this->params->get('xmlBiblesPath', 'media/com_zefaniabible/bibles/');
 		$this->arr_db_call_info = $this->fnc_Get_Bible_Book_Info();
 		$this->fnc_Get_Bible_Book_XML_File();	
