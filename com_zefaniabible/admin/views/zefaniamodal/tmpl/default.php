@@ -145,6 +145,7 @@ class cls_button_scripture {
 	private function fnc_biblegateway_link($str_link,$flg_add_title)
 	{
 			// Bible gateway coding begins here
+			$str_output = '';
 			$str_link_url = 'http://classic.biblegateway.com/passage/index.php?search='.urlencode($str_link).';&version='.$this->str_bible_gateway_version.';&interface=print';			
 			$str_pre_link = '<a title="'. JText::_('COM_ZEFANIABIBLE_SCRIPTURE_BIBLE_LINK')." ".$str_link.'" target="blank" href="'.$str_link_url.'" class="modal" rel="{handler: \'iframe\', size: {x:'.$this->int_modal_width.',y:'.$this->int_modal_height.'}}">';
 			if($this->int_link_type == 5)
