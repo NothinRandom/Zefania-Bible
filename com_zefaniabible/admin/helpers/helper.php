@@ -37,7 +37,7 @@ class ZefaniabibleHelper
 	 *  -> always kill the post
 	 *  -> precisely control the request
 	 */
-	function urlRequest($vars = array())
+	static function urlRequest($vars = array())
 	{
 		$parts = array();
 
